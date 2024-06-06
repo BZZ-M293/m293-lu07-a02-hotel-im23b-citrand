@@ -7,8 +7,36 @@
 </head>
 <body>
 
-<h1>Hotelzimmer-Buchungssystem</h1>
+<main>
+  <h1>Hotelzimmer-Buchungssystem</h1>
 
+  <form action="https://it.bzz.ch/demo/formdata/index.php">
+    <label for="zimmertyp">Zimmertyp:
+      <select id="zimmertyp" name="Zimmertyp[]" size="3" multiple>
+        <option>Einzelzimmer</option>
+        <option>Doppelzimmer</option>
+        <option>Suite</option>
+        <option>Luxussuite</option>
+        <option>Familienzimmer</option>
+        <option>Gruppenzimmer</option>
+      </select>
+    </label>
+    <br>
+    <label>Zusatzleistungen:
+      <input type="checkbox" id="check1" name="zusatzleistungen[]" value="Flughafentransfer" checked>
+      <label for="check1"> Flughafentransfer</label>
+      <input type="checkbox" id="check2" name="zusatzleistungen[]" value="Fruehstueck">
+      <label for="check2"> Frühstück</label>
+      <input type="checkbox" id="check3" name="zusatzleistungen[]" value="Spa">
+      <label for="check3"> Spa</label>
+      <input type="checkbox" id="check4" name="zusatzleistungen[]" value="Fitness">
+      <label for="check4"> Fitness</label>
+    </label>
+    <br>
+    <button type="submit">Absenden</button>
+  </form>
+
+</main>
 
 </body>
 </html>
